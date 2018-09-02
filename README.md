@@ -1,7 +1,7 @@
 # MpistoLite
 Lightweight version of Mpisto with various article reading tools. Supports Opera 11.50
 ## Wrapper
-[EnterMpistoLite](MpistoLite.html)
+[EnterMpistoLite](https://awikia.github.io/MpistoLite/MpistoLite.html)
 # Article Markup
 MpistoLite supports advanced markup. Everything you need to know is here:
 ## Buttons
