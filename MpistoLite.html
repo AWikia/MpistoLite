@@ -115,6 +115,7 @@
 		font-size:15px;
 		font-weight:500;
 		background-clip:padding-box;
+		vertical-align:middle;
 	}
 	button * {
 		vertical-align:middle;
@@ -122,6 +123,7 @@
 	button .icon {
 		width:18px;
 		height:18px;
+		margin-right:5px;
 	}
 	button:hover {
 		background-color:#00d7e6;
@@ -130,6 +132,29 @@
 		background-color:#00d7e6;
 		text-shadow:0 0 1px white;
 	}
+	button[secondary] {
+		background-color:transparent;
+		color:#18bbc6;
+	}
+	button[secondary]:hover, button[secondary]:focus {
+		background-color:transparent;
+		color:#00d7e6;
+	}
+	button[tabbed] {
+		background-color:transparent;
+		color:#18bbc6;
+		border-color:transparent;
+	}
+
+	button[tabbed]:hover, button[tabbed]:focus {
+		background-color:transparent;
+		color:#00d7e6;
+	}
+
+ button[secondary]:focus,  button[tabbed]:focus {
+	text-shadow:0 0 1px black;
+ }
+
 	.content {
 		box-sizing:border-box;
 		border:1px solid #cccddd;
@@ -141,6 +166,8 @@
 		margin:0 auto;
 		min-height:100px;
 	}
+	
+
 	.clr:after {
 		display:block;
 		visibility:hidden;
@@ -168,26 +195,34 @@
 	}
 	.button-group {
 	display:inline-table;
+	vertical-align:middle;
 	border-spacing:0;
 	}
 	.button-group button {
 		margin:0 -1px 0 0;
 		float:left;
 	}
-	.button-group > button:not(:first-child):not(:last-child):not(:only-child), .button-group > *:not(:first-child):not(:last-child):not(:only-child)  button{
-		border-radius:0!important;
+	.button-group > button:not(:first-child):not(:last-child):not(:only-child):not([secondary]):not([tabbed]), .button-group > *:not(:first-child):not(:last-child):not(:only-child)  button:not([secondary]):not([tabbed]){
 		border-left-color:transparent!important;
 		border-right-color:transparent!important;
+	}
+	.button-group > button:last-child:not(:first-child):not(:only-child):not([secondary]):not([tabbed]), .button-group > *:last-child:not(:first-child):not(:only-child)  button:not([secondary]):not([tabbed]) {
+		border-left-color:transparent!important;
+	}
+	.button-group > button:first-child:not(:last-child):not(:only-child):not([secondary]):not([tabbed]), .button-group > *:first-child:not(:last-child):not(:only-child)  button:not([secondary]):not([tabbed]){
+		border-right-color:transparent!important;
+	}
+	
+	.button-group > button:not(:first-child):not(:last-child):not(:only-child), .button-group > *:not(:first-child):not(:last-child):not(:only-child)  button{
+		border-radius:0!important;
 	}
 	.button-group > button:last-child:not(:first-child):not(:only-child), .button-group > *:last-child:not(:first-child):not(:only-child)  button{
 		border-top-left-radius:0!important;
 		border-bottom-left-radius:0!important;
-		border-left-color:transparent!important;
 	}
 	.button-group > button:first-child:not(:last-child):not(:only-child), .button-group > *:first-child:not(:last-child):not(:only-child)  button{
 		border-top-right-radius:0!important;
 		border-bottom-right-radius:0!important;
-		border-right-color:transparent!important;
 	}
 	.article-wrapper {
 	box-sizing:border-box;
@@ -224,7 +259,7 @@
 		border-top-left-radius:inherit;
 		border-top-right-radius:inherit;
 	}
-	.module .content {
+	.module .module-content {
 		padding:0 10px;
 		font-size:15px;
 		letter-spacing:0.1px;
@@ -277,6 +312,7 @@ min-height:30px;
 footer.footer .wrapper .footer-container > * > th,
 footer.footer .wrapper .footer-container > * > td {
 border:1px solid #cccddd;
+box-sizing:border-box;
 }
 
 footer.footer .wrapper .footer-container th {
@@ -365,11 +401,57 @@ footer.footer .wrapper .footer-container td a:hover {
     color:#000;
     border-color:#cccddd;
 }
+
+/* Smaller */
+@media only screen and (max-width:959px) {
+	.article-wrapper, .article, .right-rail {
+		display:block!important;
+	}
+	.right-rail {
+		width:100%;
+		margin-top:18px;
+	}
+
+	.right-rail .module {
+		width:auto;
+	}
+}
+
+@media only screen and (min-width:700px) and (max-width:959px) {
+	.right-rail {
+		column-count:2;
+	}
+}
+
+
+/* 1152 pixels */
+@media only screen and (min-width:1152px) and (max-width:1499px) {
+	.content, footer.footer .wrapper, .navbar-wrapper {
+		max-width:1116px;
+		width:1116px;
+	}
+}
+
+/* 1280 pixels */
+@media only screen and (min-width:1500px) and (max-width:1719px) {
+	.content, footer.footer .wrapper, .navbar-wrapper {
+		max-width:1244px;
+		width:1244px;
+	}
+}
+
+
+/* 1500 pixels */
+@media only screen and (min-width:1720px) and (max-width:999999999999px) {
+	.content, footer.footer .wrapper, .navbar-wrapper {
+		max-width:1464px;
+		width:1464px;
+	}
+}
 </div>
 
 
 <style generator="Karamana1150">
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900|M+PLUS+1p:100,300,400,500,700,800,900|Prompt:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:200,300,400,600,700,900&subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,japanese,korean,latin-ext,thai,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 	body {
@@ -379,6 +461,7 @@ footer.footer .wrapper .footer-container td a:hover {
 		margin:0;
 		font-weight:500;
 		background-color:#f9f9f9;
+		background-image:-webkit-gradient(linear, left top, left bottom, color-stop(35%, #f9f9f9), color-stop(70%, #fdfefe));
 		background-image:-webkit-linear-gradient(top, #f9f9f9 35%, #fdfefe 70%);
 		background-image:-o-linear-gradient(top, #f9f9f9 35%, #fdfefe 70%);
 		background-image:linear-gradient(to bottom, #f9f9f9 35%, #fdfefe 70%);
@@ -423,11 +506,12 @@ footer.footer .wrapper .footer-container td a:hover {
 	}
 	.navbar {
 		height:49px;
-		-moz-box-sizing:border-box;
-		     box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		        box-sizing:border-box;
 		width:100%;
 		background-color:#18bbc6;
-		box-shadow: 0 0 2px #000;
+		-webkit-box-shadow: 0 0 2px #000;
+		        box-shadow: 0 0 2px #000;
 		color:white;
 		border-spacing:0;
 		border-collapse:collapse;
@@ -452,7 +536,7 @@ footer.footer .wrapper .footer-container td a:hover {
 		-o-transition:all 400ms ease;
 		transition:all 400ms ease;
 		padding: 0 10px;
-		height:50px;
+		height:49px;
 		color:whitesmoke;
 		text-decoration:none!important;
 		font-size:18px;
@@ -492,15 +576,17 @@ footer.footer .wrapper .footer-container td a:hover {
 		cursor:pointer;
 		font-size:15px;
 		font-weight:500;
-		background-clip:padding-box;
+		-o-background-clip:padding-box;
+		   background-clip:padding-box;
+			vertical-align:middle;
 	}
 	button * {
 		vertical-align:middle;
-		padding:0 1px;
 	}
 	button .icon {
 		width:18px;
 		height:18px;
+		margin-right:5px;
 	}
 	button:hover {
 		background-color:#00d7e6;
@@ -509,9 +595,32 @@ footer.footer .wrapper .footer-container td a:hover {
 		background-color:#00d7e6;
 		text-shadow:0 0 1px white;
 	}
+	button[secondary] {
+		background-color:transparent;
+		color:#18bbc6;
+	}
+	button[secondary]:hover, button[secondary]:focus {
+		background-color:transparent;
+		color:#00d7e6;
+	}
+	button[tabbed] {
+		background-color:transparent;
+		color:#18bbc6;
+		border-color:transparent;
+	}
+
+	button[tabbed]:hover, button[tabbed]:focus {
+		background-color:transparent;
+		color:#00d7e6;
+	}
+
+ button[secondary]:focus,  button[tabbed]:focus {
+	text-shadow:0 0 1px black;
+ }
+
 	.content {
-		-moz-box-sizing:border-box;
-		box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		        box-sizing:border-box;
 		border:1px solid #cccddd;
 		color:#1a1a1a;
 		background-color:#fefeff;
@@ -521,6 +630,8 @@ footer.footer .wrapper .footer-container td a:hover {
 		margin:0 auto;
 		min-height:100px;
 	}
+	
+
 	.clr:after {
 		display:block;
 		visibility:hidden;
@@ -548,30 +659,38 @@ footer.footer .wrapper .footer-container td a:hover {
 	}
 	.button-group {
 	display:inline-table;
+	vertical-align:middle;
 	border-spacing:0;
 	}
 	.button-group button {
 		margin:0 -1px 0 0;
 		float:left;
 	}
-	.button-group > button:not(:first-child):not(:last-child):not(:only-child), .button-group > *:not(:first-child):not(:last-child):not(:only-child)  button{
-		border-radius:0!important;
+	.button-group > button:not(:first-child):not(:last-child):not(:only-child):not([secondary]):not([tabbed]), .button-group > *:not(:first-child):not(:last-child):not(:only-child)  button:not([secondary]):not([tabbed]){
 		border-left-color:transparent!important;
 		border-right-color:transparent!important;
+	}
+	.button-group > button:last-child:not(:first-child):not(:only-child):not([secondary]):not([tabbed]), .button-group > *:last-child:not(:first-child):not(:only-child)  button:not([secondary]):not([tabbed]) {
+		border-left-color:transparent!important;
+	}
+	.button-group > button:first-child:not(:last-child):not(:only-child):not([secondary]):not([tabbed]), .button-group > *:first-child:not(:last-child):not(:only-child)  button:not([secondary]):not([tabbed]){
+		border-right-color:transparent!important;
+	}
+	
+	.button-group > button:not(:first-child):not(:last-child):not(:only-child), .button-group > *:not(:first-child):not(:last-child):not(:only-child)  button{
+		border-radius:0!important;
 	}
 	.button-group > button:last-child:not(:first-child):not(:only-child), .button-group > *:last-child:not(:first-child):not(:only-child)  button{
 		border-top-left-radius:0!important;
 		border-bottom-left-radius:0!important;
-		border-left-color:transparent!important;
 	}
 	.button-group > button:first-child:not(:last-child):not(:only-child), .button-group > *:first-child:not(:last-child):not(:only-child)  button{
 		border-top-right-radius:0!important;
 		border-bottom-right-radius:0!important;
-		border-right-color:transparent!important;
 	}
 	.article-wrapper {
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	        box-sizing:border-box;
 	padding:0 0 10px;
 	width:100%;
 	}
@@ -592,7 +711,8 @@ footer.footer .wrapper .footer-container td a:hover {
 	min-height:50px;
 	width:300px;
 	margin:0 20px 20px;
-	box-shadow: 0 0 3px 1px rgba(0,0,0,0.5), 0 2px 2px 2px #cccddd;
+	-webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,0.5), 0 2px 2px 2px #cccddd;
+	        box-shadow: 0 0 3px 1px rgba(0,0,0,0.5), 0 2px 2px 2px #cccddd;
 	display:block;
 	border-radius:6px
 	}
@@ -623,6 +743,7 @@ footer.footer .wrapper .footer-container td a:hover {
 	.module .module-buttons .button-group {
 		text-align:left;
 	}
+
 /* Footer */
 footer.footer {
 width:100%;
@@ -633,8 +754,9 @@ color:#000;
 background-color:#fff;
 position:relative;
 z-index:49;
-padding:0 0;
-box-shadow:0 0 9px #cccddd, 0 0 2.5px #000, 0 0 1.5px #fff;
+padding:0;
+-webkit-box-shadow:0 0 9px #cccddd, 0 0 2.5px #000, 0 0 1.5px #fff;
+        box-shadow:0 0 9px #cccddd, 0 0 2.5px #000, 0 0 1.5px #fff;
 }
 
 footer.footer .wrapper {
@@ -657,6 +779,8 @@ min-height:30px;
 footer.footer .wrapper .footer-container > * > th,
 footer.footer .wrapper .footer-container > * > td {
 border:1px solid #cccddd;
+-webkit-box-sizing:border-box;
+        box-sizing:border-box;
 }
 
 footer.footer .wrapper .footer-container th {
@@ -747,7 +871,54 @@ footer.footer .wrapper .footer-container td a:hover {
     color:#000;
     border-color:#cccddd;
 }
-	</style>
+
+/* Smaller */
+@media only screen and (max-width:959px) {
+	.article-wrapper, .article, .right-rail {
+		display:block!important;
+	}
+	.right-rail {
+		width:100%;
+		margin-top:18px;
+	}
+	.right-rail .module {
+		width:auto;
+	}
+}
+
+@media only screen and (min-width:700px) and (max-width:959px) {
+	.right-rail {
+		-webkit-column-count:2;
+		   -moz-column-count:2;
+		        column-count:2;
+	}
+}
+
+/* 1152 pixels */
+@media only screen and (min-width:1152px) and (max-width:1499px) {
+	.content, footer.footer .wrapper, .navbar-wrapper {
+		max-width:1116px;
+		width:1116px;
+	}
+}
+
+/* 1280 pixels */
+@media only screen and (min-width:1500px) and (max-width:1719px) {
+	.content, footer.footer .wrapper, .navbar-wrapper {
+		max-width:1244px;
+		width:1244px;
+	}
+}
+
+
+/* 1500 pixels */
+@media only screen and (min-width:1720px) and (max-width:999999999999px) {
+	.content, footer.footer .wrapper, .navbar-wrapper {
+		max-width:1464px;
+		width:1464px;
+	}
+}	
+</style>
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#18bbc6">
 </head>
@@ -780,6 +951,7 @@ footer.footer .wrapper .footer-container td a:hover {
 					<button><img class="icon" src="Mpistolite/wds-icons-reply.svg"></img><span>Comments</span></button>
 					<button><span>History</span></button>
 				</div>
+				<button secondary><span>Export to Mpisto War</span></button>
 			</header>
 			<div class="article-wrapper table">
 				<article class="article cell">
@@ -795,9 +967,13 @@ footer.footer .wrapper .footer-container td a:hover {
 						<li>Google Chrome 6+</li>
 						<li>Safari 5+</li>
 						<li>Opera 11.10+</li>
-						<li>iOS 4+</li>
-						<li>Android 2.2+</li>
+						<li>iOS 5+</li>
+						<li>Android 3.0+</li>
 					</ul>
+					<h2>Button Modes</h2>
+				<button><span>Primary</span></button>
+				<button secondary><span>Secondary</span></button>
+				<button tabbed><span>Text</span></button>
 				</article>
 				<nav class="right-rail cell">
 					<div class="module database-module">
@@ -807,7 +983,7 @@ footer.footer .wrapper .footer-container td a:hover {
 							<br><br>
 							<b>What is MpistoLite?</b>
 							<br>
-							MpistoLite is a lightweight version of Mpisto War, limiting to standards that are offered by Opera 11.50 and also being a database for wikis and can read raw text from articles. Buttons are converted into standard design and offering some fake JS to turn into anchors and dropdowns and banners are striped out. Shadow and Stroke markup are also converted into regular text.
+							MpistoLite is a lightweight version of Mpisto War, limiting to standards that are offered by Opera 11.50 and also being a database for wikis and can read raw text from articles. Buttons are converted into their own design (Primary, Secondary or Text) and offering some fake JS to turn into anchors and dropdowns and banners are striped out. Shadow and Stroke markup are also converted into regular text.
 						</div>
 						<footer class="module-buttons clr">
 							<div class="button-group">
