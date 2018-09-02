@@ -13,5 +13,5 @@ Button are accounted for:
    <li>When <code>wds-is-square</code> parsed to <code>wds-button</code> is used, it parses the <code>square</code> attribute</li>
    <li>When <code>wds-nth-color</code> parsed to <code>wds-button</code> is used, it parses the <code>nth-color</code> attribute but button on MpistoLite will appear regular</li>
   <li>Both types of button group are accepted. Using <code>mpisto-button-group</code> will cause the <code>legacy</code> attribute to be parsed onto the button group
-    <li>Inline or Custom CSS used on buttons or in button groups will not be tolerated and won't get loaded</li>
+  <li>Inline or Custom CSS used on buttons or in button groups will not be tolerated and won't get loaded</li>
 </ol>
