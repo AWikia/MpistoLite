@@ -36,9 +36,9 @@ In Mpisto lite, inline CSS and custom CSS of any CCS3 selector is limited to the
     </ul></li>
   <li>border-radius</li>
   <li>CSS3 Colors</li>
-  <li>Nore-bg images</li>
+  <li>More-bg images</li>
   <li>text-overflow</li>
-  <li>Gradients</li>
+  <li>Gradients (Limited to linear only)</li>
   <li>text-shadow (It is limited to 3 values plus a color and up to two shadows will be recognised)</li>
   <li>box-shadow (Only position-related values and color will be recognized, only first two shadows are recognized)</li>
   <li>All SVG Properties</li>
