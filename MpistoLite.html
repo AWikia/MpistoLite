@@ -162,7 +162,6 @@
 		background-color:#fefeff;
 		width:100%;
 		max-width:1024px;
-		padding:18px;
 		margin:0 auto;
 		min-height:100px;
 	}
@@ -178,6 +177,7 @@
 	}
 	.content .wrapper {
 		position:relative;
+		padding:18px;
 	}
 	.page-header {
 		border-bottom:1px solid #cccddd;
@@ -185,14 +185,53 @@
 		margin:0 0 10px;
 		width:100%;
 	}
+
+	.color-header {
+		margin:-1px -2px -2px;
+		color:whitesmoke;
+		background-color:#18bbc6;
+		height:55px;
+	}
 	
-	.page-header .title {
-		margin:0 0 10px;
+	.color-header .counter {
+		height:55px;
+		font-size:18px;
+		font-weight:500;
+		white-space:nowrap;
+		padding:0 18px;
+	}
+
+	.color-header .counter big {
+		font-weight:bolder;
+		font-size:130%;
+	}
+
+	.color-header .link {
+		transition:all 400ms ease;
+		padding: 0 10px;
+		height:55px;
+		color:whitesmoke;
+		text-decoration:none!important;
+		font-size:18px;
+	}
+
+	.color-header .link:hover {
+		background-color:#00d7e6;
+	}
+
+	color-header * {
+		vertical-align:middle;
+	}
+	
+	.color-header .title {
+		width:100%;
 		line-height:1.4;
 		font-size:39px;
 		font-weight:800;
-		border-bottom:1px solid #cccddd;
+		height:55px;
+		padding:0 18px;
 	}
+	
 	.button-group {
 	display:inline-table;
 	vertical-align:middle;
@@ -578,7 +617,7 @@ footer.footer .wrapper .footer-container td a:hover {
 		font-weight:500;
 		-o-background-clip:padding-box;
 		   background-clip:padding-box;
-			vertical-align:middle;
+		vertical-align:middle;
 	}
 	button * {
 		vertical-align:middle;
@@ -626,7 +665,6 @@ footer.footer .wrapper .footer-container td a:hover {
 		background-color:#fefeff;
 		width:100%;
 		max-width:1024px;
-		padding:18px;
 		margin:0 auto;
 		min-height:100px;
 	}
@@ -642,6 +680,7 @@ footer.footer .wrapper .footer-container td a:hover {
 	}
 	.content .wrapper {
 		position:relative;
+		padding:18px;
 	}
 	.page-header {
 		border-bottom:1px solid #cccddd;
@@ -649,14 +688,55 @@ footer.footer .wrapper .footer-container td a:hover {
 		margin:0 0 10px;
 		width:100%;
 	}
+
+	.color-header {
+		margin:-1px -2px -2px;
+		color:whitesmoke;
+		background-color:#18bbc6;
+		height:55px;
+	}
+
+	.color-header .counter {
+		height:55px;
+		font-size:18px;
+		font-weight:500;
+		white-space:nowrap;
+		padding:0 18px;
+	}
+
+	.color-header .counter big {
+		font-weight:bolder;
+		font-size:130%;
+	}
+
+	.color-header .link {
+		-webkit-transition:all 400ms ease;
+		-o-transition:all 400ms ease;
+		transition:all 400ms ease;
+		padding: 0 10px;
+		height:55px;
+		color:whitesmoke;
+		text-decoration:none!important;
+		font-size:18px;
+	}
+
+	.color-header .link:hover {
+		background-color:#00d7e6;
+	}
+
+	color-header * {
+		vertical-align:middle;
+	}
 	
-	.page-header .title {
-		margin:0 0 10px;
+	.color-header .title {
+		width:100%;
 		line-height:1.4;
 		font-size:39px;
 		font-weight:800;
-		border-bottom:1px solid #cccddd;
+		height:55px;
+		padding:0 18px;
 	}
+	
 	.button-group {
 	display:inline-table;
 	vertical-align:middle;
@@ -881,6 +961,7 @@ footer.footer .wrapper .footer-container td a:hover {
 		width:100%;
 		margin-top:18px;
 	}
+
 	.right-rail .module {
 		width:auto;
 	}
@@ -893,6 +974,7 @@ footer.footer .wrapper .footer-container td a:hover {
 		        column-count:2;
 	}
 }
+
 
 /* 1152 pixels */
 @media only screen and (min-width:1152px) and (max-width:1499px) {
@@ -917,8 +999,7 @@ footer.footer .wrapper .footer-container td a:hover {
 		max-width:1464px;
 		width:1464px;
 	}
-}	
-</style>
+}</style>
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#18bbc6">
 </head>
@@ -943,9 +1024,19 @@ footer.footer .wrapper .footer-container td a:hover {
 	</header>
 	<div class="top-gap"></div>
 	<section class="content" onclick="">
+			<header class="color-header">
+					<div class="table">
+						<div class="tr">
+							<h1 class="title cell" style="text-align:left">MpistoLite</h1>
+							<div class="counter cell"><big>76</big> <span>Articles</span></div>
+							<a class="link cell" title="Main page"><img class="icon" src="Mpistolite/wds-icons-house-white.svg" ></img></a>
+							<a class="link cell" title="Add new page"><img class="icon" src="Mpistolite/wds-icons-add-new-page-small-white.svg" ></img></a>
+							<a class="link cell" title="Activity"><img class="icon" src="Mpistolite/wds-icons-activity-white.svg" ></img></a>
+						</div>
+					</div>
+			</header>
 		<div class="wrapper clr">
 			<header class="page-header">
-				<h1 class="title">MpistoLite</h1>
 				<div class="button-group">
 					<button><img class="icon" src="Mpistolite/wds-icons-pencil.svg"></img><span>Edit</span></button>
 					<button><img class="icon" src="Mpistolite/wds-icons-reply.svg"></img><span>Comments</span></button>
@@ -956,7 +1047,7 @@ footer.footer .wrapper .footer-container td a:hover {
 			<div class="article-wrapper table">
 				<article class="article cell">
 				<h1>Welcome</h1>
-				This is MpistoLite War. Made in KaramanouKaramana, supporting Opera 11.50 and above.
+				This is MpistoLite<!--War-->. Made in KaramanouKaramana, supporting Opera 11.50 and above.
 				<h2>Layout Creation</h2>
 				Due to dissalow of flexbox, all adaptive layouts are made with table displays which is something similar
 				<h2>Browser Requirements</h2>
@@ -1002,7 +1093,7 @@ footer.footer .wrapper .footer-container td a:hover {
     <thead class="footer-container">
       <tr>
         <th colspan="2">
-          <h1>MpistoLite War 2018</h1>
+          <h1>MpistoLite<!--War--> 2018</h1>
         </th>
       </tr>
       <tr>
@@ -1044,7 +1135,7 @@ footer.footer .wrapper .footer-container td a:hover {
         </td>
       <tr>
         <th class="footer-bar" colspan="2">
-          <h3>MpistoLite War 2018 is a profit-based database build using KaramanouKaramana and Opera 11.50 base.</h3>
+          <h3>MpistoLite<!--War--> 2018 is a profit-based database build using KaramanouKaramana and Opera 11.50 base.</h3>
         </th>
       </tr>
     </thead>
