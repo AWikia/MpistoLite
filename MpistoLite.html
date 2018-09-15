@@ -193,6 +193,11 @@
 		height:55px;
 	}
 	
+	.color-header .wordmark img {
+		height:50px;
+		margin:2.5px 10px;
+	}
+	
 	.color-header .counter {
 		height:55px;
 		font-size:18px;
@@ -226,7 +231,7 @@
 	.color-header .title {
 		width:100%;
 		line-height:1.4;
-		font-size:39px;
+		font-size:36px;
 		font-weight:800;
 		height:55px;
 		padding:0 18px;
@@ -287,7 +292,8 @@
 	margin:0 20px 20px;
 	box-shadow: 0 0 3px 1px rgba(0,0,0,0.5), 0 2px 2px 2px #cccddd;
 	display:block;
-	border-radius:6px
+	border-radius:9px;
+	border:1px solid #cccddd;
 	}
 	.module h2 {
 		border-bottom:1px solid #cccddd;
@@ -308,7 +314,6 @@
 		padding:10px;
 		font-size:18px;
 		background-color:#efefef;
-		margin:0 0 10px;
 		border-bottom-left-radius:inherit;
 		border-bottom-right-radius:inherit;
 		text-align:center;
@@ -336,7 +341,7 @@ border:1px solid #cccddd;
 border-top-style:hidden;
 border-bottom-style:hidden;
 width:100%;
-max-width:1024px;
+max-width:988px;
 border-spacing:0;
 margin:0 auto;
 color:inherit;
@@ -442,7 +447,7 @@ footer.footer .wrapper .footer-container td a:hover {
 }
 
 /* Smaller */
-@media only screen and (max-width:959px) {
+@media only screen and (max-width:1023px) {
 	.article-wrapper, .article, .right-rail {
 		display:block!important;
 	}
@@ -454,9 +459,20 @@ footer.footer .wrapper .footer-container td a:hover {
 	.right-rail .module {
 		width:auto;
 	}
+
+	.content {
+		width:auto;
+	}
 }
 
-@media only screen and (min-width:700px) and (max-width:959px) {
+@media only screen and (max-width:1007px) {
+	.content {
+		margin-left:2px;
+		margin-right:2px;
+	}
+}
+
+@media only screen and (min-width:700px) and (max-width:1023px) {
 	.right-rail {
 		column-count:2;
 	}
@@ -560,7 +576,7 @@ footer.footer .wrapper .footer-container td a:hover {
 	.navbar-wrapper {
 		margin:0 auto;
 		width:auto;
-		max-width:1024px;
+		max-width:988px;
 		padding:0 19px;
 	}
 	svg {
@@ -664,7 +680,7 @@ footer.footer .wrapper .footer-container td a:hover {
 		color:#1a1a1a;
 		background-color:#fefeff;
 		width:100%;
-		max-width:1024px;
+		max-width:988px;
 		margin:0 auto;
 		min-height:100px;
 	}
@@ -694,6 +710,11 @@ footer.footer .wrapper .footer-container td a:hover {
 		color:whitesmoke;
 		background-color:#18bbc6;
 		height:55px;
+	}
+
+	.color-header .wordmark img {
+		height:50px;
+		margin:2.5px 10px;
 	}
 
 	.color-header .counter {
@@ -731,7 +752,7 @@ footer.footer .wrapper .footer-container td a:hover {
 	.color-header .title {
 		width:100%;
 		line-height:1.4;
-		font-size:39px;
+		font-size:36px;
 		font-weight:800;
 		height:55px;
 		padding:0 18px;
@@ -794,7 +815,8 @@ footer.footer .wrapper .footer-container td a:hover {
 	-webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,0.5), 0 2px 2px 2px #cccddd;
 	        box-shadow: 0 0 3px 1px rgba(0,0,0,0.5), 0 2px 2px 2px #cccddd;
 	display:block;
-	border-radius:6px
+	border-radius:9px;
+	border:1px solid #cccddd;
 	}
 	.module h2 {
 		border-bottom:1px solid #cccddd;
@@ -815,7 +837,6 @@ footer.footer .wrapper .footer-container td a:hover {
 		padding:10px;
 		font-size:18px;
 		background-color:#efefef;
-		margin:0 0 10px;
 		border-bottom-left-radius:inherit;
 		border-bottom-right-radius:inherit;
 		text-align:center;
@@ -844,7 +865,7 @@ border:1px solid #cccddd;
 border-top-style:hidden;
 border-bottom-style:hidden;
 width:100%;
-max-width:1024px;
+max-width:988px;
 border-spacing:0;
 margin:0 auto;
 color:inherit;
@@ -953,7 +974,7 @@ footer.footer .wrapper .footer-container td a:hover {
 }
 
 /* Smaller */
-@media only screen and (max-width:959px) {
+@media only screen and (max-width:1023px) {
 	.article-wrapper, .article, .right-rail {
 		display:block!important;
 	}
@@ -965,9 +986,20 @@ footer.footer .wrapper .footer-container td a:hover {
 	.right-rail .module {
 		width:auto;
 	}
+
+	.content {
+		width:auto;
+	}
 }
 
-@media only screen and (min-width:700px) and (max-width:959px) {
+@media only screen and (max-width:1007px) {
+	.content {
+		margin-left:2px;
+		margin-right:2px;
+	}
+}
+
+@media only screen and (min-width:700px) and (max-width:1023px) {
 	.right-rail {
 		-webkit-column-count:2;
 		   -moz-column-count:2;
@@ -1027,9 +1059,11 @@ footer.footer .wrapper .footer-container td a:hover {
 			<header class="color-header">
 					<div class="table">
 						<div class="tr">
+							<a class="wordmark cell" style="text-align:left"><img src="Litemark.png"></img></a>
 							<h1 class="title cell" style="text-align:left">MpistoLite</h1>
-							<div class="counter cell"><big>76</big> <span>Articles</span></div>
+							<div class="counter cell"><big>109</big> <span>Articles</span></div>
 							<a class="link cell" title="Main page"><img class="icon" src="Mpistolite/wds-icons-house-white.svg" ></img></a>
+							<a class="link cell" title="A Secure Portal"><img class="icon" src="Mpistolite/AWikia.svg" ></img></a>
 							<a class="link cell" title="Add new page"><img class="icon" src="Mpistolite/wds-icons-add-new-page-small-white.svg" ></img></a>
 							<a class="link cell" title="Activity"><img class="icon" src="Mpistolite/wds-icons-activity-white.svg" ></img></a>
 						</div>
@@ -1093,6 +1127,7 @@ footer.footer .wrapper .footer-container td a:hover {
     <thead class="footer-container">
       <tr>
         <th colspan="2">
+		 <img class="wordmark" src="Litemark.png"></img>
           <h1>MpistoLite<!--War--> 2018</h1>
         </th>
       </tr>
