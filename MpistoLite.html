@@ -7,10 +7,11 @@
 <style generator="Karamana1160">
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900|M+PLUS+1p:100,300,400,500,700,800,900|Prompt:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:200,300,400,600,700,900&subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,japanese,korean,latin-ext,thai,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Noto+Sans+JP:100,300,400,500,700,900|Noto+Sans+KR:100,300,400,500,700,900|Noto+Sans+SC:100,300,400,500,700,900|Noto+Sans+TC:100,300,400,500,700,900|Noto+Sans:400,700&subset=chinese-simplified,chinese-traditional,cyrillic,cyrillic-ext,devanagari,greek,greek-ext,hebrew,japanese,korean,latin-ext,vietnamese');
 	body {
 		width:100%;
 		height:100%;
-		font-family:Source Sans Pro, "Prompt",  "M PLUS 1p", "Gothic A1";
+		font-family:"Arimo", "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC";
 		margin:0;
 		font-weight:500;
 		background-color:#f9f9f9;
@@ -74,9 +75,9 @@
 		box-shadow: 0 0 2px #000;
 		color:white;
 		border-spacing:0;
-		border-collapse:collapse;
 		position:fixed;
 		z-index:90;
+		font-family:Source Sans Pro, "Prompt",  "M PLUS 1p", "Gothic A1";
 	}
 	.navbar-wrapper {
 		margin:0 auto;
@@ -458,21 +459,25 @@
 footer.footer {
 width:100%;
 min-height:50px;
-border-top:2px solid #cccddd;
+/*border-top:2px solid #cccddd;
+*/
 margin:30px 0 0;
-color:#000;
-background-color:#fff;
+background-color:#000;
+color:#fff;
 position:relative;
 z-index:49;
 padding:0 18px;
 box-shadow:0 0 9px #cccddd, 0 0 2.5px #000, 0 0 1.5px #fff;
+box-shadow: 0 0 3px #000, 0 0 3px #fff;
 box-sizing:border-box;
+font-family:Source Sans Pro, "Prompt",  "M PLUS 1p", "Gothic A1";
 }
 
 footer.footer .wrapper {
-border:1px solid #cccddd;
+/*border:1px solid #cccddd;
 border-top-style:hidden;
 border-bottom-style:hidden;
+*/
 width:100%;
 max-width:926px;
 border-spacing:0;
@@ -488,7 +493,8 @@ min-height:30px;
 
 footer.footer .wrapper .footer-container > * > th,
 footer.footer .wrapper .footer-container > * > td {
-border:1px solid #cccddd;
+/*border:1px solid #cccddd;
+*/
 box-sizing:border-box;
 }
 
@@ -497,8 +503,8 @@ width:100%;
 }
 
 footer.footer .wrapper .footer-container th h1 {
-font-weight:700;
-font-size:33px;
+font-weight:600;
+font-size:36px;
 display:inline;
 vertical-align:middle;
 margin-left:8px;
@@ -509,7 +515,7 @@ vertical-align:middle;
 }
 
 footer.footer .wrapper .footer-container th.footer-bar h3 {
-font-size:17px;
+font-size:20px;
 }
 
 footer.footer .wrapper .footer-container th {
@@ -523,7 +529,7 @@ footer.footer .wrapper .footer-container th:not(.footer-bar) {
   height:65px;
 }
 
-footer.footer .wrapper .footer-container th::after {
+/*footer.footer .wrapper .footer-container th::after {
 position:absolute;
 top:0;
 left:0;
@@ -535,17 +541,21 @@ display:block;
 background-color:#000;
 opacity:0.11;
 }
+*/
 
 footer.footer .wrapper .footer-container td {
-font-size:17px;
+/*font-size:17px;
+padding:4px 8px 8px;
+*/
 position:relative;
 z-index:1;
 font-weight:500;
-padding:4px 8px 8px;
+text-align:left;
 }
 
 
-footer.footer .wrapper .footer-container td::after {
+
+/*footer.footer .wrapper .footer-container td::after {
 position:absolute;
 top:0;
 left:0;
@@ -557,27 +567,33 @@ display:block;
 background-color:#000;
 opacity:0.035;
 }
+*/
 
 footer.footer .wrapper .footer-container td h2 {
-font-size:24px;
-font-weight:bolder;
+	font-size:24px;
+	font-weight:bolder;
+	text-align:left;
 }
 
 footer.footer .wrapper .footer-container td a {
+/*
+padding:6px 2px;
+float:left;
+*/
 display:block;
 -o-transition:all 150ms ease 12ms;
 transition:all 150ms ease 12ms;
 text-decoration:none;
-padding:6px 2px;
+line-height:1.5;
+-o-transition:all 500ms;
+transition:all 500ms;
+font-size:16px;
 clear:both;
-float:left;
  color:#cccddd;
-border-bottom:4px solid #000;
 }
 
 footer.footer .wrapper .footer-container td a:hover {
-    color:#000;
-    border-color:#cccddd;
+    color:#fff;
 }
 
 /* Smaller */
@@ -608,7 +624,7 @@ footer.footer .wrapper .footer-container td a:hover {
 		padding:0 16px;
 	}
 
-footer.footer .wrapper .footer-container th.footer-bar h3 {
+/*footer.footer .wrapper .footer-container th.footer-bar h3 {
 font-size:14px;
 }
 
@@ -624,7 +640,7 @@ font-size:20px;
 footer.footer .wrapper .footer-container th h1 {
 font-size:28px;
 }
-
+*/
 }
 
 @media only screen and (min-width:700px) and (max-width:959px) {
@@ -650,23 +666,6 @@ font-size:28px;
 		width:1146px;
 	}
 
-footer.footer .wrapper .footer-container th.footer-bar h3 {
-font-size:20px;
-}
-
-
-footer.footer .wrapper .footer-container td {
-font-size:18px;
-}
-
-footer.footer .wrapper .footer-container th h1 {
-font-size:40px;
-}
-
-footer.footer .wrapper .footer-container td h2 {
-font-size:30px;
-}
-
 }
 
 
@@ -676,23 +675,6 @@ font-size:30px;
 		max-width:1346px;
 		width:1346px;
 	}
-
-footer.footer .wrapper .footer-container th.footer-bar h3 {
-font-size:20px;
-}
-
-
-footer.footer .wrapper .footer-container td {
-font-size:18px;
-}
-
-footer.footer .wrapper .footer-container th h1 {
-font-size:40px;
-}
-
-footer.footer .wrapper .footer-container td h2 {
-font-size:30px;
-}
 
 }
 </style>
@@ -758,7 +740,7 @@ font-size:30px;
 						<div class="tr">
 							<a class="wordmark cell" style="text-align:left"><img src="Litemark.png"></img></a>
 							<h1 class="title cell" style="text-align:left">MpistoLite</h1>
-							<div class="counter cell"><big>1024</big> <span>Articles</span></div>
+							<div class="counter cell"><big>1394</big> <span>Articles</span></div>
 							<a class="link cell" title="Main page"><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-house" /> 
 					</svg></a>
@@ -842,7 +824,7 @@ font-size:30px;
   <table class="wrapper">
     <thead class="footer-container">
       <tr>
-        <th colspan="2">
+        <th colspan="3">
 		 <img class="wordmark" src="Litemark.png"></img>
           <h1>MpistoLite<!--War--> 2018</h1>
         </th>
@@ -850,42 +832,52 @@ font-size:30px;
       <tr>
         <td>
           <h2>Overview</h2>
-          <a> What's new to Mpisto War </a>
-          <a> Company </a>
-          <a> Hiring </a>
-          <a> Mpisto in a glance </a>
-          <a> Merlin the Gooze </a>
+          <a class="link"> What's new to Mpisto War </a>
+          <a class="link"> Mpisto War vs Amanda Amantoula </a>
+          <a class="link"> Company </a>
+          <a class="link"> Hiring </a>
+          <a class="link"> Mpisto in a glance </a>
+          <a class="link" href="https://github.com/AWikia"> GitHub </a>
         </td>
         <td>
           <h2>Community</h2>
-          <a> Support </a>
-          <a> Create a Wiki (Mpisto War) </a>
-          <a> Import a Wiki (Mpisto War) </a>
-          <a> Report a Wiki (Mpisto War)</a>
-          <a> Help (Mpisto War)</a>
-          <a> Mpisto War Central</a>
+          <a class="link"> Support </a>
+          <a class="link"> Create a Wiki (Mpisto War) </a>
+          <a class="link"> Import a Wiki (Mpisto War) </a>
+          <a class="link"> Report a Wiki (Mpisto War)</a>
+          <a class="link"> Help (Mpisto War)</a>
+          <a class="link"> Mpisto War Store </a>
+        </td>
+        <td>
+          <h2>A Secure</h2>
+          <a class="link"> Join A Secure </a>
+          <a class="link"> A Secure Portal </a>
+          <a class="link"> Migrate FANDOM Account to A Secure </a>
+          <a class="link" href="https://discord.gg/9JEWA8S">Discord Server </a>
+          <a class="link" href="http://el.alpha-technologies.wikia.com/wiki/Project:Contact">Contact A Wikia </a>
         </td>
       </tr>
-        <td>
-          <h2>Wikis</h2>
-          <a> A Wiki - Techno Wiki </a>
-          <a> A Wiki - Dev Wiki </a>
-          <a> A Wiki Foundation </a>
-          <a> More Wikis </a>
-          <a> Find an A Wiki Wikia (Mpisto War)</a>
-          <a> Article Collections</a>
-        </td>
-        <td>
-          <a> Terms of Use </a>
-          <a> Mpirthi Central </a>
-          <a> Ryneeeel Zekzphire </a>
-          <a> Mpisto Scenes </a>
-          <a> Privacy Policy </a>
-          <a> Local Sitemap (Mpisto War)</a>
-          <a> Global Sitemap </a>
-        </td>
       <tr>
-        <th class="footer-bar" colspan="2">
+        <td colspan="2">
+          <h2>Wikis</h2>
+          <a class="link"> A Wiki - Techno Wiki </a>
+          <a class="link"> A Wiki - Dev Wiki </a>
+          <a class="link"> A Wiki Foundation </a>
+          <a class="link"> More A Wiki Wikis </a>
+          <a class="link"> More Mpisto War Wikis </a>
+        </td>
+        <td>
+		  <h2>Privacy</h2>
+          <a class="link"> Terms of Use </a>
+          <a class="link"> Ryneeeel Zekzphire </a>
+          <a class="link"> Mpisto Scenes </a>
+          <a class="link"> Privacy Policy </a>
+          <a class="link"> Local Sitemap (Mpisto War) </a>
+          <a class="link"> Global Sitemap </a>
+        </td>
+       </tr>
+      <tr>
+        <th class="footer-bar" colspan="3">
           <h3>MpistoLite<!--War--> 2018 is a profit-based database build using KaramanouKaramana and Opera 11.60 base.</h3>
         </th>
       </tr>
