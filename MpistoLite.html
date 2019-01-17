@@ -8,10 +8,34 @@
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900|M+PLUS+1p:100,300,400,500,700,800,900|Prompt:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:200,300,400,600,700,900&subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,japanese,korean,latin-ext,thai,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Noto+Sans+JP:100,300,400,500,700,900|Noto+Sans+KR:100,300,400,500,700,900|Noto+Sans+SC:100,300,400,500,700,900|Noto+Sans+TC:100,300,400,500,700,900|Noto+Sans:400,700&subset=chinese-simplified,chinese-traditional,cyrillic,cyrillic-ext,devanagari,greek,greek-ext,hebrew,japanese,korean,latin-ext,vietnamese');
+@font-face {
+    font-family:  Mpisto;
+    src:url('Mpisto2019-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:  Mpisto;
+    src:url('Mpisto2019-Light.ttf') format('truetype');
+	font-weight:300;
+}
+
+@font-face {
+    font-family:  Mpisto;
+    src:url('Mpisto2019-Medium.ttf') format('truetype');
+	font-weight:500;
+}
+
+
+@font-face {
+    font-family:  Mpisto;
+    src:url('Mpisto2019-Bold.ttf') format('truetype');
+	font-weight:700;
+}
+
 	body {
 		width:100%;
 		height:100%;
-		font-family:"Arimo", "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC";
+		font-family:"Mpisto", "Flockk", "Source Sans Pro", "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC";
 		margin:0;
 		font-weight:500;
 		background-color:#f9f9f9;
@@ -231,18 +255,19 @@
 		color:#0a0a0a;
 		border-radius:4px;
 		min-height:15px;
-		padding:7px 14px;
+		padding:7px 16px;
 		display:inline-block;
 		-o-transition:all 250ms ease-in-out 2ms;
 		transition:all 250ms ease-in-out 2ms;
 		outline:0;
 		font-family:Inherit;
 		cursor:pointer;
-		font-size:15px;
+		font-size:13.5px;
 		font-weight:500;
 		background-clip:padding-box;
 		vertical-align:middle;
 		margin:0 2px;
+		line-height:16px;
 	}
 	button * {
 		vertical-align:middle;
@@ -254,10 +279,12 @@
 	}
 	button:hover {
 		background-color:#00d7e6;
+		border-color:#00d7e6;
 		color:#000;
 	}
 	button:focus {
 		background-color:#00d7e6;
+		border-color:#00d7e6;
 		text-shadow:0 0 1px white;
 		color:#000;
 	}
@@ -268,6 +295,7 @@
 	button[secondary]:hover, button[secondary]:focus {
 		background-color:transparent;
 		color:#00d7e6;
+		border-color:#00d7e6;
 	}
 	button[tabbed] {
 		background-color:transparent;
@@ -378,6 +406,7 @@
 	.button-group button {
 		margin:0 -1px 0 0;
 		float:left;
+		padding:7px 12px;
 	}
 	.button-group > button:not(:first-child):not(:last-child):not(:only-child):not([secondary]):not([tabbed]), .button-group > *:not(:first-child):not(:last-child):not(:only-child)  button:not([secondary]):not([tabbed]){
 		border-left-color:transparent!important;
@@ -740,7 +769,7 @@ font-size:28px;
 						<div class="tr">
 							<a class="wordmark cell" style="text-align:left"><img src="Litemark.png"></img></a>
 							<h1 class="title cell" style="text-align:left">MpistoLite</h1>
-							<div class="counter cell"><big>1790</big> <span>Articles</span></div>
+							<div class="counter cell"><big>2463</big> <span>Articles</span></div>
 							<a class="link cell" title="Main page"><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-house" /> 
 					</svg></a>
