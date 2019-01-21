@@ -32,6 +32,9 @@
 	font-weight:700;
 }
 
+	html {
+		scrollbar-color:#18bbc5 #f9f9f9;
+	}
 	body {
 		width:100%;
 		height:100%;
@@ -343,6 +346,13 @@
 		width:100%;
 	}
 
+	.page-header h1 {
+		margin:-14px 0 8px;
+		line-height:1.5;
+		border-bottom:1px solid #cccddd;
+		font-size:40px;
+	}
+
 	.color-header {
 		margin:-1px -2px -2px;
 		color:whitesmoke;
@@ -396,6 +406,14 @@
 		height:55px;
 		padding:0 18px;
 	}
+	
+		.color-header .title a {
+			color:inherit;
+		}
+
+		.color-header .title a:hover {
+			color:white;
+		}
 	
 	.button-group {
 	display:inline-table;
@@ -529,6 +547,10 @@ box-sizing:border-box;
 
 footer.footer .wrapper .footer-container th {
 width:100%;
+}
+
+footer.footer .wrapper .footer-container th .wordmark {
+	max-height:65px;
 }
 
 footer.footer .wrapper .footer-container th h1 {
@@ -768,8 +790,8 @@ font-size:28px;
 					<div class="table">
 						<div class="tr">
 							<a class="wordmark cell" style="text-align:left"><img src="Litemark.png"></img></a>
-							<h1 class="title cell" style="text-align:left">MpistoLite</h1>
-							<div class="counter cell"><big>2463</big> <span>Articles</span></div>
+							<h1 class="title cell" style="text-align:left"><a>MpistoLite</a></h1>
+							<div class="counter cell"><big>2590</big> <span>Articles</span></div>
 							<a class="link cell" title="Main page"><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-house" /> 
 					</svg></a>
@@ -787,6 +809,10 @@ font-size:28px;
 			</header>
 		<div class="wrapper clr">
 			<header class="page-header">
+				<div class="title">
+					<h1>Main Page</h1>
+				</div>
+				<div class="buttons">
 				<div class="button-group">
 					<button><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-pencil" /> 
@@ -804,6 +830,7 @@ font-size:28px;
 				<button secondary><span><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-download" /> 
 					</svg> <span>Export to Mpisto War</span></span></button>
+				</div>
 			</header>
 			<div class="article-wrapper table">
 				<article class="article cell">
