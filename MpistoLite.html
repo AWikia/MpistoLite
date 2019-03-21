@@ -297,8 +297,6 @@
 	.navbar-wrapper {
 		margin:0 auto;
 		width:auto;
-		max-width:926px;
-		padding:0 18px;
 	}
 	svg {
 	fill:currentColor;
@@ -344,6 +342,57 @@
 	.dropdown {
 		display:table-cell;
 		position:relative;
+	}
+
+	@media only screen and (max-width:754px) {
+		.navbar .link .name {
+			display:none!important;
+		}
+
+	.navbar .chevron {
+		display:none;
+	}
+	}
+
+	@media only screen and (min-width:960px) {
+		.navbar .small-only {
+			display:none!important;
+		}
+	}
+
+	@media only screen and (max-width:959px) {
+		.navbar .med-up {
+			display:none!important;
+		}
+	}
+
+	@media only screen and (min-width:1100px) {
+		.navbar .med-down {
+			display:none!important;
+		}
+		
+	}
+
+
+	@media only screen and (max-width:1099px) {
+		.navbar .large-up {
+			display:none!important;
+		}
+		
+	}
+
+	.navbar .link * {
+		vertical-align:middle;
+	}
+
+	.dropdown .chevron {
+		width:14px;
+		height:14px;
+	}
+
+	.dropdown:hover .chevron {
+		-o-transform:rotate(180deg);
+		transform:rotate(180deg);
 	}
 
 	.navbar .dropdown {
@@ -880,6 +929,7 @@ footer.footer .wrapper .footer-container th h1 {
 font-size:28px;
 }
 */
+
 }
 
 @media only screen and (min-width:700px) and (max-width:959px) {
@@ -892,30 +942,15 @@ font-size:28px;
 
 /* 1100 pixels */
 @media only screen and (min-width:1100px) {
-	.content, footer.footer .wrapper, .navbar-wrapper {
+	.content, footer.footer .wrapper {
 		max-width:1066px;
 		width:1066px;
 	}
+	
 }
 
-/* 1500 pixels 
-@media only screen and (min-width:1500px) and (max-width:1599px) {
-	.content, footer.footer .wrapper, .navbar-wrapper {
-		max-width:1146px;
-		width:1146px;
-	}
-
-}*/
 
 
-/* 1600 pixels 
-@media only screen and (min-width:1600px) and (max-width:999999999999px) {
-	.content, footer.footer .wrapper, .navbar-wrapper {
-		max-width:1346px;
-		width:1346px;
-	}
-
-}*/
 </style>
 
 
@@ -926,14 +961,18 @@ font-size:28px;
 	<header class="table navbar">
 		<div class="navbar-wrapper">
 			<div class="tr">
+				<a class="link cell large-up">Company</a>
+				<a class="link cell large-up">Hiring</a>
 				<div class="dropdown">
 					<a class="link cell">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon ">
+						<svg xmlns="http://www.w3.org/2000/svg" class="small-only icon ">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-menu" /> </svg>
+  <span class="med-up">Explore</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon chevron med-up">
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-dropdown-tiny" /> </svg>
 					</a>
 					<div class="dropdown-content left">
-						<a>Company</a>
-						<a>Hiring</a>
+						<a class="med-down">Company</a>
+						<a class="med-down">Hiring</a>
 						<a href="https://awikia.github.io/Mpisto">Mpisto War 2018</a>
 						<a href="https://awikia.github.io/MpistoClassic">Mpisto 2018</a>
 						<a href="https://github.com/AWikia">GitHub</a>
@@ -945,7 +984,8 @@ font-size:28px;
 				</a>
 				<div class="dropdown">
 					<a class="link cell">
-						<img class="avatar" src="HM100.png"></img><span class="name">HM100</span>
+						<img class="avatar" src="HM100.png"></img><span class="name">HM100</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon chevron">
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-dropdown-tiny" /> </svg>
 					</a>
 					<div class="dropdown-content right">
 						<a>Profile</a>
@@ -954,11 +994,11 @@ font-size:28px;
 					</div>
 				</div>
 				<div class="dropdown">
-							<a class="link cell" title="A Secure Portal"><svg version="1.1" width="52" height="57" class="icon" viewBox="-1 -1 52 57" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <!-- Exported by Scratch - http://scratch.mit.edu/ --><!--#003FFF-->
-  <path id="ID0.06426620716229081" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" d="M 230.400 190.500 L 229 181.200 L 230.400 173.200 L 239.500 163 L 241.600 162.200 L 244.100 163.200 L 254 172.200 L 254.900 181 L 254.250 190 " transform="matrix(1.82266104221344, 0, 0, 1.82266104221344, -414.85, -293.45)"/>
-  <path id="ID0.0372769720852375" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" d="M 229.700 181.500 L 232.100 180.200 L 241.800 180.250 L 251.700 180.250 L 254.050 181.450 " transform="matrix(1.7334266901016235, 0, 0, -3.7820217609405518, -393.05, 716.9)"/>
-</svg></a>
+							<a class="link cell" title="A Secure Portal"><svg version="1.1" width="55" height="55" class="icon" viewBox="-1 -1 55 55" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path id="ID0.06426620716229081" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M 230.850 189.850 L 229.150 181.350 L 229.950 175.850 L 234.400 171.800 L 237.250 168.500 L 241.750 163.150 L 248 169.250 L 250.200 171.700 L 253.950 176 L 254.500 180.450 L 253.500 189.500 " transform="matrix(1.82266104221344, 0, 0, 1.82266104221344, -414.25, -294.45)"/>
+  <path id="ID0.0372769720852375" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M 230.600 181.900 L 232.100 180.200 L 241.800 180.250 L 251.700 180.250 L 253.750 182.150 " transform="matrix(1.7334266901016235, 0, 0, -3.7820217609405518, -392.45, 715.9)"/>
+</svg> <svg xmlns="http://www.w3.org/2000/svg" class="icon chevron">
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-dropdown-tiny" /> </svg></a>
 			<div class="dropdown-content right">
 				<a>Manage your portal</a>
 				<a>View Gallery footer on<br>Mpisto War Central</a>
@@ -979,7 +1019,7 @@ font-size:28px;
 						<div class="tr">
 							<a class="wordmark cell" style="text-align:left"><img src="Litemark.png"></img></a>
 							<h1 class="title cell" style="text-align:left"><a>MpistoLite</a></h1>
-							<div class="counter cell"><big>3440</big> <span>Articles</span></div>
+							<div class="counter cell"><big>4690</big> <span>Articles</span></div>
 							<a class="link cell" title="Main page"><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-house" /> 
 					</svg></a>
@@ -1009,7 +1049,7 @@ font-size:28px;
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-reply" /> 
 					</svg><span>Comments</span></button>
 					<button><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-clock-tiny" /> 
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-clock" /> 
 					</svg><span>History</span></button>
 					<button><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-trash" /> 
